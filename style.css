@@ -1,0 +1,415 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #121212;
+  align-items: center;
+}
+
+.header-left {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.header-left a {
+  color: #0ef;
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li:last-child {
+  margin-right: 40px;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  color: #0ef;
+}
+
+.hero-content .typing-animation {
+  border-right: 2px solid white;
+  animation: blink 1s step-end infinite;
+  color: #0ef;
+}
+
+.hero-content p {
+  margin: 20px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;  /* Center align the icons */
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Social Media Icons (Home Section) */
+.home-sci {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;  /* Center align the icons */
+}
+
+.home-sci a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.hero-image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.neon-border {
+  background: linear-gradient(90deg, #00f, #0ef, #0ff);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #0ef;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* About Section Styles */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 20px;
+  background: #121212;
+}
+
+#about img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+
+.about-content {
+  max-width: 600px;
+  color: white;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Education Section */
+#education {
+  background: #121212;
+}
+
+#education .education-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.education-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  margin: 20px;
+  text-align: left;
+}
+
+.education-card h3 {
+  color: #0ef;
+}
+
+.education-card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Skills Section Styles */
+#skills {
+  background: #121212;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.technical-skills, .professional-skills {
+  width: 45%;
+  color: white;
+}
+
+.technical-skills h3, .professional-skills h3 {
+  color: #0ef;
+}
+
+/* Line Percentage for Technical Skills */
+.skill-line {
+  margin: 20px 0;
+}
+
+.skill-line .progress-bar {
+  background-color: #333;
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.skill-line .progress-bar .progress {
+  background-color: #0ef;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Circle Percentage for Professional Skills */
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: transparent;
+  border: 10px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.circle .circle-progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#0ef 0% 85%, transparent 85% 100%);
+}
+
+.circle-text {
+  z-index: 1;
+  font-size: 20px;
+}
+
+/* Projects Section Styles */
+#projects {
+  background: #121212;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.project-card {
+  width: 30%;
+  background: #222;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
+}
+
+.project-card:hover {
+  background: #0ef;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #0ef;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+/* Contact Section */
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #040505;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 3em;
+}
+
+#contact h1 span {
+  color: #00ffff;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-icons a {
+  color: #00ffff;
+  margin: 0 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #00ffff;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form button:hover {
+  background-color: #008b8b;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+/* Button Style */
+.btn-box {
+  padding: 12px 30px;
+  background: #007bff;  /* Blue background */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-box:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
