@@ -402,11 +402,6 @@ form button:hover {
   background-color: #008b8b;
 }
 
-footer {
-  margin-top: 20px;
-  font-size: 0.8em;
-  color: #aaa;
-}
 
 /* Button Style */
 .btn-box {
@@ -423,3 +418,14 @@ footer {
 .btn-box:hover {
   background: #0056b3; /* Darker blue on hover */
 }
+/* Footer Style */
+footer {
+  background-color: #21caf9;
+  color: #070606;
+  text-align: center;
+  padding: 10px;
+  position: down;
+  bottom: 0;
+  width: 100%;
+}
+
